@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>個人履歷</title>
+
+  <style>
+    body {
+      font-family: "Segoe UI", sans-serif;
+      background: linear-gradient(135deg, #e3f2fd, #fce4ec);
+      margin: 0;
+    }
+
+    .container {
+      max-width: 850px;
+      margin: 40px auto;
+      background: white;
+      border-radius: 15px;
+      padding: 30px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+    }
+
+    .header {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      border-bottom: 2px solid #eee;
+      padding-bottom: 20px;
+    }
+
+    .header img {
+      width: 140px;
+      height: 180px;
+      object-fit: cover;
+      border-radius: 12px;
+      transition: transform 0.3s;
+    }
+
+    .header img:hover {
+      transform: scale(1.05);
+    }
+
+    .info h1 {
+      margin: 0;
+      font-size: 28px;
+    }
+
+    .info p {
+      margin: 5px 0;
+      color: #555;
+    }
+
+    h2 {
+      margin-top: 25px;
+      border-left: 6px solid #ff7eb3;
+      padding-left: 10px;
+    }
+
+    ul {
+      padding-left: 20px;
+    }
+
+    button {
+      margin-top: 20px;
+      padding: 10px 18px;
+      border: none;
+      background: #ff7eb3;
+      color: white;
+      border-radius: 8px;
+      cursor: pointer;
+      font-size: 14px;
+    }
+
+    button:hover {
+      background: #ff4f94;
+    }
+  </style>
+</head>
+
+<body>
+
+<div class="container">
+
+  <div class="header">
+    <!-- ✅ 圖片位置 -->
+    <img src="./images/photo.jpeg" alt="個人照片">
+
+    <div class="info">
+      <h1>簡湘霓</h1>
+      <p>學號：114018077</p>
+      <p>亞洲大學 聽力暨語言治療學系</p>
+      <p>Email：your@email.com</p>
+      <p>電話：0912-345-678</p>
+    </div>
+  </div>
+
+  <h2>自我介紹</h2>
+  <p id="intro">
+    我對醫療與人際互動充滿熱情，未來希望成為語言治療師，幫助他人改善溝通能力與生活品質。
+  </p>
+
+  <h2>學歷</h2>
+  <ul>
+    <li>亞洲大學 聽力暨語言治療學系（就讀中）</li>
+  </ul>
+
+  <h2>技能</h2>
+  <ul>
+    <li>良好溝通能力</li>
+    <li>團隊合作</li>
+    <li>基礎醫療知識</li>
+  </ul>
+
+  <h2>經驗</h2>
+  <ul>
+    <li>醫院參訪（了解語言治療師工作內容）</li>
+    <li>校內活動參與</li>
+  </ul>
+
+  <button onclick="changeIntro()">換一句自我介紹</button>
+
+</div>
+
+<script>
+function changeIntro() {
+  document.getElementById("intro").innerText =
+    "我具備責任感與學習熱忱，期望未來在醫療領域持續精進，並幫助更多需要幫助的人。";
+}
+</script>
+
+</body>
+</html>
